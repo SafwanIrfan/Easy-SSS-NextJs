@@ -47,6 +47,7 @@ export async function POST(req: Request) {
       case "user.deleted": {
          if (event.data.id != null) {
             await deleteUser(event.data.id);
+            //TODO: Remove stripe subscription
          }
       }
    }
