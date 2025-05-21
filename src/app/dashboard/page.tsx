@@ -1,5 +1,5 @@
 import { auth } from "@clerk/nextjs/server";
-import getProducts from "../../server/db/products";
+import { getProducts } from "../../server/db/products";
 import { NoProducts } from "./_components/NoProducts";
 import Link from "next/link";
 import { ArrowRightIcon, PlusIcon } from "lucide-react";
